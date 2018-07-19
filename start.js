@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === '+info') {
-        message.reply('I am Back - New Prefix [+] / Bug Fixes / Soon ( ..yt CMD / Other CMDs ) Bot Re-Creator:FSxOmega');
+        message.reply('I am Back - Prefix:+ // Bug Fixes // Bot Creator:FSxOmega');
       }  
 });
 
