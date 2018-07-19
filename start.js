@@ -5,6 +5,9 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
+client.user.setStatus("Stream")
+client.user.setGame("+help for Commands!")
+
 client.on('message', message => {
     if (message.content === '+info') {
         message.reply('I am Back - Prefix:+ // Bug Fixes // Bot Creator:FSxOmega');
