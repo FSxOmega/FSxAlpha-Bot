@@ -6,23 +6,22 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '+help') {
-    	message.reply('My Commands are:
-                      Released:
-                      +info
-                      Comming in a few Updates:
-                      +bot-process
-                      +yt');
-  	}  
+    if (message.content === '..patches') {
+        message.reply('PONG - New Prefix [..] / Bug Fixes / Soon ( ..yt CMD / Other CMDs');
+      }  
 });
 
 client.on('message', message => {
-    if (message.content === '+info') {
-    	message.reply('No longer R.I.P LaTex! - Prefix [+] / Bug Fixes / Soon ( +yt CMD / Other CMDs ')
-        Bot Re-Creator:FSxOmega);
-  	}  
+    if (message.content === '..help') {
+        message.reply('Ok Sure Here - Error : Code Unfinished Work ...');
+      }  
 });
 
+client.on('message', message => {
+    if (message.content === '..yt') {
+        message.reply('YT Official : ');
+      }  
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
