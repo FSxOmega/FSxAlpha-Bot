@@ -5,9 +5,6 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-client.user.setStatus("Stream")
-client.user.setGame("+help for Commands!")
-
 client.on('message', message => {
     if (message.content === '+info') {
         message.reply('I am Back - Prefix:+ // Bug Fixes // Bot Creator:FSxOmega');
@@ -16,15 +13,14 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '+help') {
-        message.reply('Ok Sure - Error : Code Unfinished...');
+        message.reply('Ok Sure - +info +yt // More Commands will come soon!');
       }  
 });
 
 client.on('message', message => {
     if (message.content === '+yt') {
-        message.reply('YT Official : https://m.youtube.com/channel/UCTJQkBj3dhkgA1TXnpZGkhw');
+        message.reply('YouTube : https://m.youtube.com/channel/UCTJQkBj3dhkgA1TXnpZGkhw');
       }  
 });
 
-// THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
