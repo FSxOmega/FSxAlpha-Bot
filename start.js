@@ -6,21 +6,20 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === ('+infos:) {
-        message.reply('LaTex is Back! - New Prefix [+]
-                             Bot Re-Creator:FSxOmega');
+    if (message.content === '+patches') {
+        message.reply('I am Back - New Prefix [+] / Bug Fixes / Soon ( ..yt CMD / Other CMDs ) Bot Re-Creator:FSxOmega');
       }  
 });
 
 client.on('message', message => {
     if (message.content === '+help') {
-        message.reply('Ok Here - Error : Code Unfinished...');
+        message.reply('Ok Sure - Error : Code Unfinished...');
       }  
 });
 
 client.on('message', message => {
-    if (message.content === '..yt') {
-        message.reply('YouTube Channel Link: https://m.youtube.com/channel/UCTJQkBj3dhkgA1TXnpZGkhw');
+    if (message.content === '+yt') {
+        message.reply('YT Official : https://m.youtube.com/channel/UCTJQkBj3dhkgA1TXnpZGkhw');
       }  
 });
 
