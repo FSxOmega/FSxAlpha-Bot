@@ -2,8 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    client.user.setGame("Getting Programmed!")
-    console.log('I am ready!');
+    client.user.setActivity('Test', {type: 'WATCHING'});
 });
 
 client.on('message', message => {
@@ -14,7 +13,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '+help') {
-        message.reply('Ok Sure - +info +yt // More Commands will come soon!');
+        message.reply('Damn... here you got them - +info +yt // More Commands will come soon!');
       }  
 });
 
