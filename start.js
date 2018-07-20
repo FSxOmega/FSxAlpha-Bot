@@ -12,6 +12,10 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content === prefix + 'info') {
         message.reply('I am Back - Prefix:' + prefix + ' // Bug Fixes // Bot Creator:FSxOmega');
+        message.channel.send({embed: {
+  color: 3447003,
+  description: "A very simple Embed!"
+}});
       }  
 });
 
