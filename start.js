@@ -17,8 +17,8 @@ client.on('message', message => {
 
 //Command +help
 client.on('message', message => {
-    if (message.content === '+help') {
-//         message.reply('Damn... here you got them - ' + prefix + 'info ' + prefix + 'yt ' + prefix + 'invite ' + prefix + 'donate ' + prefix + 'support // More Commands will come soon!');
+    if (message.content === prefix + 'help') {
+        message.reply('Damn... here you got them - ' + prefix + 'info ' + prefix + 'yt ' + prefix + 'invite ' + prefix + 'donate ' + prefix + 'support // More Commands will come soon!');
       }  
 });
 
