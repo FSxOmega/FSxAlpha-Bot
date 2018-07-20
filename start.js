@@ -29,4 +29,10 @@ client.on('message', message => {
       }  
 });
 
+client.on('message', message => {
+    if (message.content === '+donate') {
+        message.reply('If you wanna Donate for faster Coding - paypal.me/fsxalpha')
+      }
+});
+
 client.login(process.env.BOT_TOKEN);
