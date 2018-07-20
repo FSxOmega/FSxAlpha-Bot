@@ -25,7 +25,7 @@ client.on('message', message => {
 
         message.channel.send({embed: {
   color: 3447003,
-  description: "damn... here you got them - ' + prefix + 'info ' + prefix + 'yt ' + prefix + 'invite ' + prefix + 'donate ' + prefix + 'support // More Commands will come soon!');
+  description: "damn... here you got them - ' + prefix + 'info ' + prefix + 'yt ' + prefix + 'invite ' + prefix + 'donate ' + prefix + 'support // More Commands will come soon!"
 
 }});
       }  
