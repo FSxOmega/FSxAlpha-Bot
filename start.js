@@ -35,4 +35,10 @@ client.on('message', message => {
       }
 });
 
+client.on('message', message => {
+    if (message.content === '+support') {
+        message.reply('Wanna join my Support Discord Server? - https://discord.gg/mvwaBr4')
+      }
+});
+
 client.login(process.env.BOT_TOKEN);
