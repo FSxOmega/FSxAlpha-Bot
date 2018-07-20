@@ -23,4 +23,10 @@ client.on('message', message => {
       }  
 });
 
+client.on('message', message => {
+    if (message.content === '+invite') {
+        message.reply('Wanna invite me to your Server? - https://discordapp.com/oauth2/authorize?client_id=469517178757185546&permissions=8&scope=bot');
+      }  
+});
+
 client.login(process.env.BOT_TOKEN);
