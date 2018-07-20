@@ -52,14 +52,22 @@ client.on('message', message => {
 //Command +donate
 client.on('message', message => {
     if (message.content === prefix + 'donate') {
-        message.reply('If you wanna Donate for faster Coding - paypal.me/fsxalpha')
+
+        message.channel.send({embed: {
+  color: 3447003,
+  description: "If you wanna Donate for faster Coding - paypal.me/fsxalpha"
+}});
       }
 });
 
 //Command +support
 client.on('message', message => {
     if (message.content === prefix + 'support') {
-        message.reply('Wanna join my Support Discord Server? - https://discord.gg/mvwaBr4')
+
+        message.channel.send({embed: {
+  color: 3447003,
+  description: "If you wanna Donate for faster CoWanna join my Support Discord Server? - https://discord.gg/mvwaBr4'"
+}});
       }
 });
 
