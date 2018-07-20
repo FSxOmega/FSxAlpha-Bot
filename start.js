@@ -45,7 +45,11 @@ client.on('message', message => {
 //Command +invite
 client.on('message', message => {
     if (message.content === prefix + 'invite') {
-        message.reply('Wanna invite me to your Server? - https://discordapp.com/oauth2/authorize?client_id=469517178757185546&permissions=8&scope=bot');
+        message.channel.send({embed: {
+  color: 3447003,
+  description: "Wanna invite me to your Server? - https://discordapp.com/oauth2/authorize?client_id=469517178757185546&permissions=8&scope=bot"
+}});
+
       }  
 });
 
