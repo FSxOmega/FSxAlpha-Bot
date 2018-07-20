@@ -8,39 +8,44 @@ client.on('ready', () => {
     console.log('Bot Launched!:D');
 });
 
-
+//Command +info
 client.on('message', message => {
     if (message.content === prefix + 'info') {
         message.reply('I am Back - Prefix:+ // Bug Fixes // Bot Creator:FSxOmega');
       }  
 });
 
+//Command +help
 client.on('message', message => {
-    if (message.content === '+help') {
+    if (message.content === prefix + 'help') {
         message.reply('Damn... here you got them - +info +yt +invite +donate +support // More Commands will come soon!');
       }  
 });
 
+//Command +yt
 client.on('message', message => {
-    if (message.content === '+yt') {
+    if (message.content === prefix + 'yt') {
         message.reply('YouTube : https://m.youtube.com/channel/UCTJQkBj3dhkgA1TXnpZGkhw');
       }  
 });
 
+//Command +invite
 client.on('message', message => {
-    if (message.content === '+invite') {
+    if (message.content === prefix + 'invite') {
         message.reply('Wanna invite me to your Server? - https://discordapp.com/oauth2/authorize?client_id=469517178757185546&permissions=8&scope=bot');
       }  
 });
 
+//Command +donate
 client.on('message', message => {
-    if (message.content === '+donate') {
+    if (message.content === prefix + 'donate') {
         message.reply('If you wanna Donate for faster Coding - paypal.me/fsxalpha')
       }
 });
 
+//Command +support
 client.on('message', message => {
-    if (message.content === '+support') {
+    if (message.content === prefix + 'support') {
         message.reply('Wanna join my Support Discord Server? - https://discord.gg/mvwaBr4')
       }
 });
