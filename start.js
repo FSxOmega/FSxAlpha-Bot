@@ -34,7 +34,11 @@ client.on('message', message => {
 //Command +yt
 client.on('message', message => {
     if (message.content === prefix + 'yt') {
-        message.reply('YouTube : https://m.youtube.com/channel/UCTJQkBj3dhkgA1TXnpZGkhw');
+
+        message.channel.send({embed: {
+  color: 3447003,
+  description: "YouTube : https://m.youtube.com/channel/UCTJQkBj3dhkgA1TXnpZGkhw"
+}});
       }  
 });
 
