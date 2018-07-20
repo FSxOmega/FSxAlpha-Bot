@@ -66,7 +66,7 @@ client.on('message', message => {
 
         message.channel.send({embed: {
   color: 3447003,
-  description: "If you wanna Donate for faster CoWanna join my Support Discord Server? - https://discord.gg/mvwaBr4'"
+  description: "Wanna join my Support Discord Server? - https://discord.gg/mvwaBr4'"
 }});
       }
 });
