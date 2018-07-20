@@ -1,12 +1,52 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+//This is the Bot-Prefix
+const prefix = '+';
 
+//Bot on Ready
 client.on('ready', () => {
     console.log('Bot Launched!:D');
 });
 
+//Listener-Event
+
 client.on('message', message => {
-    if (message.content === '+info') {
+    
+    //Variables
+    let msg = message.content.toUpperCase();
+    let sender = message.author;
+    let cont = message.content.slice(prefix.length).split(" ");
+    let args = cont.slice(1);
+    
+    //Command +clear
+    if (message.startsWith(prefix + 'clear')) {
+        async function purge() {
+            message.delete();
+            
+            //Role Check!
+            if (!message.member.roles.find("botcmder", "botcmder")) {
+                message.member.channel.send('You need the botcmder role to do this!');
+                return
+            
+            if (isNsN(args[0]))) {
+                message.channel.send('Please use a Number! \n usage: '+ prefix + ' clear <amount>');
+                
+            }
+            
+            const fetched = await message.channel.fetchMessages({limit: args[0]});
+            message.channel.send(fetched.size + ' Messages found, Deleting...');
+            
+            //Deleting Messages
+            message.channel.bulkDelete(fetched)
+                .catch(error => message.channel.send('Error: ${error}'));
+        }
+        
+        purge();
+        
+            
+
+client.on('message', message => {
+    if (message.content === 'info') {
         message.reply('I am Back - Prefix:+ // Bug Fixes // Bot Creator:FSxOmega');
       }  
 });
