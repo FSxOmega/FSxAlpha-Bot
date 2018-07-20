@@ -22,10 +22,11 @@ client.on('message', message => {
 //Command +help
 client.on('message', message => {
     if (message.content === prefix + 'help') {
-        message.reply('Damn... here you got them - ' + prefix + 'info ' + prefix + 'yt ' + prefix + 'invite ' + prefix + 'donate ' + prefix + 'support // More Commands will come soon!');
+
         message.channel.send({embed: {
   color: 3447003,
-  description: "I am Back - Prefix:' + prefix + ' // Bug Fixes // Bot Creator:FSxOmega!"
+  description: "damn... here you got them - ' + prefix + 'info ' + prefix + 'yt ' + prefix + 'invite ' + prefix + 'donate ' + prefix + 'support // More Commands will come soon!');
+
 }});
       }  
 });
