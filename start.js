@@ -11,14 +11,14 @@ client.on('ready', () => {
 //Command +info
 client.on('message', message => {
     if (message.content === prefix + 'info') {
-        message.reply('I am Back - Prefix:+ // Bug Fixes // Bot Creator:FSxOmega');
+        message.reply('I am Back - Prefix:' + prefix + ' // Bug Fixes // Bot Creator:FSxOmega');
       }  
 });
 
 //Command +help
 client.on('message', message => {
     if (message.content === prefix + 'help') {
-        message.reply('Damn... here you got them - +info +yt +invite +donate +support // More Commands will come soon!');
+//         message.reply('Damn... here you got them - ' + prefix + 'info ' + prefix + 'yt ' + prefix + 'invite ' + prefix + 'donate ' + prefix + 'support // More Commands will come soon!');
       }  
 });
 
