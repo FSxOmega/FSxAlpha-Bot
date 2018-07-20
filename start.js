@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
+    message.reply('I got Updated!')
     console.log('Bot Launched!:D');
 });
 
