@@ -13,7 +13,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '+help') {
-        message.reply('Damn... here you got them - +info +yt +invite +donate // More Commands will come soon!');
+        message.reply('Damn... here you got them - +info +yt +invite +donate +support // More Commands will come soon!');
       }  
 });
 
