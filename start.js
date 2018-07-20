@@ -11,10 +11,10 @@ client.on('ready', () => {
 //Command +info
 client.on('message', message => {
     if (message.content === prefix + 'info') {
-        message.reply('I am Back - Prefix:' + prefix + ' // Bug Fixes // Bot Creator:FSxOmega');
+
         message.channel.send({embed: {
   color: 3447003,
-  description: "A very simple Embed!"
+  description: "I am Back - Prefix:' + prefix + ' // Bug Fixes // Bot Creator:FSxOmega!"
 }});
       }  
 });
@@ -23,6 +23,10 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === prefix + 'help') {
         message.reply('Damn... here you got them - ' + prefix + 'info ' + prefix + 'yt ' + prefix + 'invite ' + prefix + 'donate ' + prefix + 'support // More Commands will come soon!');
+        message.channel.send({embed: {
+  color: 3447003,
+  description: "I am Back - Prefix:' + prefix + ' // Bug Fixes // Bot Creator:FSxOmega!"
+}});
       }  
 });
 
