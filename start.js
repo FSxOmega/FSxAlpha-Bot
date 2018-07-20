@@ -14,6 +14,7 @@ client.on('message', message => {
 
         message.channel.send({embed: {
   color: 3447003,
+  title: "Info"
   description: "I am Back - Prefix: + // Bug Fixes // Bot Creator:FSxOmega!"
 }});
       }  
@@ -25,6 +26,7 @@ client.on('message', message => {
 
         message.channel.send({embed: {
   color: 3447003,
+  title: "Help//Commands"
   description: "damn... here you got them - :info // :yt // :invite // :donate // :support // More Commands will come soon!"
 
 }});
@@ -37,6 +39,7 @@ client.on('message', message => {
 
         message.channel.send({embed: {
   color: 3447003,
+  title: "YouTube"
   description: "YouTube : https://m.youtube.com/channel/UCTJQkBj3dhkgA1TXnpZGkhw"
 }});
       }  
@@ -47,6 +50,7 @@ client.on('message', message => {
     if (message.content === prefix + 'invite') {
         message.channel.send({embed: {
   color: 3447003,
+  title: "FSxAlpha Invite Link"
   description: "Wanna invite me to your Server? - https://discordapp.com/oauth2/authorize?client_id=469517178757185546&permissions=8&scope=bot"
 }});
 
@@ -59,6 +63,7 @@ client.on('message', message => {
 
         message.channel.send({embed: {
   color: 3447003,
+  title: "Donating"
   description: "If you wanna Donate for faster Coding - paypal.me/fsxalpha"
 }});
       }
@@ -70,6 +75,7 @@ client.on('message', message => {
 
         message.channel.send({embed: {
   color: 3447003,
+  title: "Support Server"
   description: "Wanna join my Support Discord Server? - https://discord.gg/mvwaBr4'"
 }});
       }
