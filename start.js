@@ -29,7 +29,7 @@ client.on('message', message => {
         message.channel.send({embed: {
   color: 0xee00ff,
   
-  description: "damn... here you got them - :info // :yt // :invite // :donate // :support // More Commands will come soon!"
+  description: "Damn... here you got them - :info // :yt // :invite // :donate // :support // More Commands will come soon!"
 
 }});
       }  
