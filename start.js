@@ -8,6 +8,14 @@ client.on('ready', () => {
     console.log('Bot Launched!:D');
 });
 
+//Command +say
+client.on('message', message => {
+    if (message.content === prefix + 'say') {
+    if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("You are not Allowed to do this!");
+    let botmessage = args.join(" ");
+    message.delete().catch();
+    message.channel.send(botmessage)
+
 //Command +info
 client.on('message', message => {
     if (message.content === prefix + 'info') {
