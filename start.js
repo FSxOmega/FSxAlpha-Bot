@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 //This is the Bot-Prefix
-const prefix = ':';
+const prefix = '+';
 
 //Bot on Ready
 client.on('ready', () => {
