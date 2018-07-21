@@ -15,7 +15,7 @@ client.on('message', message => {
         message.channel.send({embed: {
   color: 3447003,
  
-  description: "I am Back - Prefix: + // Bug Fixes // Bot Creator:FSxOmega!"
+  description: "Hey! It's me, CircruitCPU's Sister! // Bug Fixes // Bot Creator:FSxOmega!"
 }});
       }  
 });
