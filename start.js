@@ -15,6 +15,7 @@ client.on('message', message => {
     let botmessage = args.join(" ");
     message.delete().catch();
     message.channel.send(botmessage)
+});
 
 //Command +info
 client.on('message', message => {
