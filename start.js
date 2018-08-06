@@ -7,8 +7,6 @@ const prefix = '+';
 //Bot on Ready
 client.on('ready', () => {
     console.log('Bot Launched!:D');
-    client.user.setActivity("Game");
-    client.user.setGame("Test");
 });
 
 
